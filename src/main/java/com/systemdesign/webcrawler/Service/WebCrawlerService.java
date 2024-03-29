@@ -3,7 +3,6 @@ package com.systemdesign.webcrawler.Service;
 import com.systemdesign.webcrawler.Entity.CrawlData;
 import com.systemdesign.webcrawler.Entity.VisitedUrl;
 import com.systemdesign.webcrawler.Repository.CrawlDataRepository;
-import com.systemdesign.webcrawler.Repository.visitedUrlDataRepository;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -16,7 +15,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 @Service
-public class webCrawlerService {
+public class WebCrawlerService {
     private final Queue<String> urlQueue = new LinkedList<>();
 
     @Autowired
